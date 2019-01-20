@@ -82,12 +82,3 @@ long ping() {
 long msToCm(long microseconds) {
   return microseconds * .034 / 2;
 }
-
-void blink(int blinks) {
-    for ( int i = 0; i <= blinks; i++ ) {
-        digitalWrite(led, HIGH);
-        delay(250);
-        digitalWrite(led, LOW);
-        delay(250);
-    }
-}
