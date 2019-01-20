@@ -21,7 +21,7 @@
 #define echoPin A0
 #define pingPin 10
 
-// roughly three feet
+// roughly 2.6 feet
 #define detectionDistance 80 
 
 void setup() {
@@ -41,12 +41,9 @@ void loop() {
   //Serial.println(distance);
   if ( distance < detectionDistance ) {
     // get a random song
-    // play the song
     playNote(NOTE_G5, 100, .1);
   }
 }
- 
-
  
 /**********************/
 
@@ -79,8 +76,6 @@ long ping() {
   
   return duration;
 }
-
- 
 
 // Helper function to return the distance to an object
 // detected by the ultrasonic sensor in centimeters.
